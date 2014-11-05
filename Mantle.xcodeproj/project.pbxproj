@@ -669,7 +669,7 @@
 			name = "Mantle-iOS Tests";
 			productName = MaverickTests;
 			productReference = D042FC8715F72BC7004E8054 /* Mantle-iOS Tests.xctest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D0A56B451804B04900A84EDC /* Mantle-Mac */ = {
 			isa = PBXNativeTarget;
@@ -870,6 +870,91 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B936CADA1A0AED9500D1E3D3 /* Master */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D094E4851777619600906BF7 /* Release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "Mantle/Mantle-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+			};
+			name = Master;
+		};
+		B936CADB1A0AED9500D1E3D3 /* Master */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D094E4921777619600906BF7 /* Mac-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$PRODUCT_NAME/$PRODUCT_NAME-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Master;
+		};
+		B936CADC1A0AED9500D1E3D3 /* Master */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D094E48F1777619600906BF7 /* Mac-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREFIX_HEADER = "MantleTests/MantleTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					MantleTests/specta/src,
+					"MantleTests/expecta/src/**",
+				);
+				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Master;
+		};
+		B936CADD1A0AED9500D1E3D3 /* Master */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D094E48D1777619600906BF7 /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/$PRODUCT_NAME.dst;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/Mantle;
+			};
+			name = Master;
+		};
+		B936CADE1A0AED9500D1E3D3 /* Master */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D094E48B1777619600906BF7 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PREFIX_HEADER = "MantleTests/MantleTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					MantleTests/specta/src,
+					"MantleTests/expecta/src/**",
+				);
+				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Master;
+		};
+		B936CADF1A0AED9500D1E3D3 /* Master */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D094E4931777619600906BF7 /* Mac-StaticLibrary.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/Mantle;
+			};
+			name = Master;
+		};
 		D042FC6415F72B23004E8054 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D094E4831777619600906BF7 /* Debug.xcconfig */;
@@ -1225,6 +1310,7 @@
 				D042FC6415F72B23004E8054 /* Debug */,
 				D0A56BE11804B97600A84EDC /* Test */,
 				D042FC6515F72B23004E8054 /* Release */,
+				B936CADA1A0AED9500D1E3D3 /* Master */,
 				D042FCC415F72E0C004E8054 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1236,6 +1322,7 @@
 				D042FC6715F72B23004E8054 /* Debug */,
 				D0A56BE21804B97600A84EDC /* Test */,
 				D042FC6815F72B23004E8054 /* Release */,
+				B936CADB1A0AED9500D1E3D3 /* Master */,
 				D042FCC515F72E0C004E8054 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1247,6 +1334,7 @@
 				D042FC6A15F72B23004E8054 /* Debug */,
 				D0A56BE31804B97600A84EDC /* Test */,
 				D042FC6B15F72B23004E8054 /* Release */,
+				B936CADC1A0AED9500D1E3D3 /* Master */,
 				D042FCC615F72E0C004E8054 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1258,6 +1346,7 @@
 				D042FC9915F72BC7004E8054 /* Debug */,
 				D0A56BE41804B97600A84EDC /* Test */,
 				D042FC9A15F72BC7004E8054 /* Release */,
+				B936CADD1A0AED9500D1E3D3 /* Master */,
 				D042FCC715F72E0C004E8054 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1269,6 +1358,7 @@
 				D042FC9C15F72BC7004E8054 /* Debug */,
 				D0A56BE51804B97600A84EDC /* Test */,
 				D042FC9D15F72BC7004E8054 /* Release */,
+				B936CADE1A0AED9500D1E3D3 /* Master */,
 				D042FCC815F72E0C004E8054 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1280,6 +1370,7 @@
 				D0A56B661804B04900A84EDC /* Debug */,
 				D0A56BE61804B97600A84EDC /* Test */,
 				D0A56B671804B04900A84EDC /* Release */,
+				B936CADF1A0AED9500D1E3D3 /* Master */,
 				D0A56B681804B04900A84EDC /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
