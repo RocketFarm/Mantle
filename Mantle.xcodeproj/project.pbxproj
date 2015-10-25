@@ -695,7 +695,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = GitHub;
 			};
 			buildConfigurationList = D042FC3515F72B23004E8054 /* Build configuration list for PBXProject "Mantle" */;
@@ -892,6 +892,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$PRODUCT_NAME/$PRODUCT_NAME-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -913,6 +914,7 @@
 				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Master;
@@ -943,6 +945,7 @@
 				);
 				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -963,6 +966,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Mantle/Mantle-Prefix.pch";
@@ -994,6 +998,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$PRODUCT_NAME/$PRODUCT_NAME-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1007,6 +1012,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$PRODUCT_NAME/$PRODUCT_NAME-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1029,6 +1035,7 @@
 				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1049,6 +1056,7 @@
 				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1092,6 +1100,7 @@
 				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1112,6 +1121,7 @@
 				);
 				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1139,6 +1149,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$PRODUCT_NAME/$PRODUCT_NAME-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1160,6 +1171,7 @@
 				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Profile;
@@ -1190,6 +1202,7 @@
 				);
 				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1244,6 +1257,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$PRODUCT_NAME/$PRODUCT_NAME-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1266,6 +1280,7 @@
 				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Test;
@@ -1298,6 +1313,7 @@
 				INFOPLIST_FILE = "MantleTests/MantleTests-Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
